@@ -1,3 +1,20 @@
+var App = React.createClass({
+  render(){
+    return(
+    <div>
+      <Navbar />
+      <Content />
+      <AboutUs />
+      <MissionVision />
+      <ServicesOffered />
+      <Portfolio />
+      <PlaceOrder />
+      <Contact />
+    </div>
+      )
+  }
+});
+
     var Navbar = React.createClass({
         render: function() {
           return (
@@ -298,38 +315,10 @@
       });
 
       ReactDOM.render(
-        <Navbar/>,
-        document.getElementById('navbar')
+        <App/>,
+        document.getElementById('app')
       ); 
-	  ReactDOM.render(
-        <Content/>,
-        document.getElementById('content')
-      );
- 	  ReactDOM.render(
-        <AboutUs/>,
-        document.getElementById('aboutUs')
-      );
- 	  ReactDOM.render(
-        <MissionVision/>,
-        document.getElementById('missionVision')
-      ); 
- 	  ReactDOM.render(
-        <ServicesOffered/>,
-        document.getElementById('servicesOffered')
-      ); 
- 	  ReactDOM.render(
-        <Portfolio/>,
-        document.getElementById('portfolio')
-      );
 
-	  ReactDOM.render(
-        <PlaceOrder/>,
-        document.getElementById('placeOrder')
-      );
-	  ReactDOM.render(
-        <Contact/>,
-        document.getElementById('contact')
-      );
 	  ReactDOM.render(
         <Footer/>,
         document.getElementById('footer')
